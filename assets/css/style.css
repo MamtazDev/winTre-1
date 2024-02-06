@@ -1,0 +1,168 @@
+ html {
+     -webkit-font-smoothing: antialiased;
+     text-rendering: optimizeLegibility;
+     text-size-adjust: 100%;
+     position: fixed;
+     /* prevent overscroll bounce*/
+     overflow: hidden;
+     min-height: -webkit-fill-available;
+ }
+
+ body {
+     margin: 0;
+     padding: 0;
+     line-height: 1.5;
+     width: 100%;
+     height: 100%;
+     min-height: 100vh;
+     min-height: -webkit-fill-available;
+     position: fixed;
+     /* prevent overscroll bounce*/
+     overflow: hidden;
+ }
+
+ #hejchatbot_container {
+     font-family: "Nunito", Arial, Helvetica, sans-serif;
+     margin: 0 auto;
+     font-size: 16px;
+     line-height: 1.5;
+     overflow: hidden;
+     width: 100vw;
+     min-height: 100%;
+     max-width: 100%;
+     max-height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: var(--background-color, none);
+     background-image: var(--background-image-mobile,
+             var(--background-image, none));
+     background-size: cover;
+     background-position: center center;
+     background-repeat: no-repeat;
+     flex: 1;
+ }
+
+ #hejchatbot_header {
+     display: flex;
+     align-items: center;
+     width: 100%;
+     border-bottom: var(--topbar-border-bottom-color, #fff);
+     background-color: var(--top-bar-color, transparent);
+     padding: 5px;
+ }
+
+ #hejchatbot_header__left_content {
+     width: auto;
+     display: flex;
+     align-items: center;
+ }
+
+ #hejchatbot_header__right_content {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+ }
+
+ #hejchatbot_header_logo {
+     min-width: 100px;
+     max-width: 100px;
+     min-height: 40px;
+     max-height: 40px;
+     background-image: var(--logo-image, none);
+     background-size: contain;
+     background-position: center center;
+     background-repeat: no-repeat;
+ }
+
+ #hejchatbot_header_title {
+     font-size: 14px;
+     color: var(--title-text-color, black);
+     font-weight: 600;
+ }
+
+ #hejchatbot_header_subtitle {
+     font-size: 11px;
+     color: var(--subtitle-text-color, black);
+ }
+
+ #hejchatbot_footer,
+ .hejchatbot_footer,
+ #hejchatbot_footer_iubenda {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: auto;
+     width: 100%;
+     font-size: 10px;
+     text-align: -webkit-center;
+ }
+
+ #hejchatbot_footer>figure,
+ .hejchatbot_footer>figure {
+     max-width: 100px;
+ }
+
+ #hejchatbot_footer>figure img,
+ .hejchatbot_footer>figure img {
+     max-width: 100%;
+     height: auto;
+ }
+
+ #hejchatbot_footer_a_iubenda {
+     color: inherit;
+     padding: 5px 0;
+     text-align: center;
+     font-size: 12px;
+     width: 100%;
+ }
+
+ .chatbot__message__text {
+     box-shadow: 0 1px 10px 0 rgba(236, 106, 54, 0.8);
+ }
+
+ .chatbot__message__choice__cards__card ul li button {
+     color: #fff;
+     width: 100%;
+     text-align: center;
+     border: none;
+     background-color: #6535AB;
+     padding: 12px;
+ }
+
+ #hejchatbot_header {
+     border-bottom: 0px solid #FF6B00;
+ }
+
+ .chatbot__message__choice__buttons>button,
+ .chatbot__message__choice__quicks>button {
+     border: 1px solid var(--user-border-color, #fff);
+ }
+
+ @media only screen and (max-width: 767px) {
+     button.button_large {
+         width: 100%
+     }
+ }
+
+ @media only screen and (max-width: 767px) {
+     button.privacy_ok {
+         width: 100%
+     }
+ }
+
+ /* footer{ display:flex; flex-direction:column;
+   background:#58595B;
+    color: #fffff;
+padding:5px;
+} */
+ #hejchatbot_header_logo {
+     min-width: 100px;
+     max-width: 100px;
+     min-height: 50px;
+     max-height: 50px;
+     background-image: var(--logo-image, none);
+     background-size: contain;
+     background-position: center center;
+     background-repeat: no-repeat;
+ }
